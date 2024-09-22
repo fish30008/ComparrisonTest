@@ -1,0 +1,90 @@
+.compareContainer {
+    height: 100%;
+    width: 100%;
+    background-image: url('../assets/img/TwoFactorQuizzBack.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #36137b;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+
+.compareContainer>p {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10%;
+    margin-bottom: 20px;
+}
+
+.compareContainer>input {
+    width: 50%;
+    height: 8vh;
+    border: none;
+    border-radius: 10px;
+    background: rgba(217, 217, 217, 0.667);
+    margin: 20px 0 10px 20px;
+    color: rgba(198, 216, 244, 0.26);
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.compareContainer>input:focus {
+    background-color: white;
+    color: #36137b;
+    box-shadow: 0 0 10px rgba(0, 84, 211, 0.5);
+    outline: none;
+    padding-left: 10px;
+}
+
+
+.compareContainer>input::placeholder {
+    padding-left: 5px;
+    color: #4118948e;
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.compareButton {
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    border: 1px solid rgba(59, 19, 240, 0.642);
+    border-radius: 20px;
+    background: rgb(62, 62, 203);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 1px 1px 20px 1px rgba(5, 7, 131, 0.644);
+    cursor: pointer;
+    transition: 100ms ease-in;
+}
+
+.compareButton:hover {
+    filter: brightness(1.2);
+}
+
+.compareButton:active {
+    transform: scale(0.95);
+}
+
+#output {
+    display: none;
+    height: 100%;
+    width: 80%;
+    flex-wrap: wrap;
+    grid-template-columns: auto auto;
+    padding: 30px;
+    border: 1px solid rgb(48, 0, 145);
+    background: linear-gradient(45deg, rgba(67, 0, 186, 0.6), rgba(207, 0, 234, 0.6));
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+    margin: 40px 0;
+    box-shadow: 1px 1px 20px 1px black;
+}

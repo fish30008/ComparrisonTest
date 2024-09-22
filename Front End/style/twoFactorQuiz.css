@@ -1,0 +1,191 @@
+.twoFactorQuizz {
+    height: 100%;
+    background-image: url('../assets/img/TwoFactorQuizzBack.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #36137b;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+
+.searchTwoFactor,
+.preferencesContainer {
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: x-large;
+}
+
+.searchTwoFactor {
+    width: 80%;
+    background: transparent;
+
+    label {
+        color: rgb(255, 255, 255);
+    }
+}
+
+.inputTwoFactor {
+    width: 70%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(217, 217, 217, 0.667);
+    margin: 20px 10px 10px 0;
+    color: rgba(198, 216, 244, 0.26);
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.inputTwoFactor:focus {
+    background-color: white;
+    color: #36137b;
+    box-shadow: 0 0 10px rgba(0, 84, 211, 0.5);
+    outline: none;
+    padding-left: 15px;
+}
+
+
+.inputTwoFactor::placeholder {
+    padding-left: 5px;
+    color: #4118948e;
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.preferencesContainer {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px rgb(7, 26, 88), 4px 4px 10px rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+}
+
+.factorButton {
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    border: 1px solid rgba(59, 19, 240, 0.642);
+    border-radius: 20px;
+    background: rgb(62, 62, 203);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 1px 1px 20px 1px rgba(5, 7, 131, 0.644);
+    cursor: pointer;
+    transition: 100ms ease-in;
+}
+
+.factorButton:active {
+    transform: scale(0.95);
+}
+
+.factorButton:hover {
+    filter: brightness(1.2);
+}
+
+.preferences {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    margin-top: 10px;
+}
+
+.preference {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+    width: 90%;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    color: #36137b;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), 4px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 300ms ease;
+}
+
+.preference:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.active {
+    background: rgba(32, 196, 35, 0.832);
+    color: white;
+}
+
+.preferenceButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 170px;
+    height: 50px;
+    margin-top: 20px;
+    border: 1px solid rgba(59, 19, 240, 0.642);
+    border-radius: 20px;
+    background: rgb(62, 62, 203);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 1px 1px 20px 1px rgba(5, 7, 131, 0.644);
+    cursor: pointer;
+    margin: 40px 0;
+    transition: 100ms ease-in;
+}
+
+.preferenceButton:active {
+    transform: scale(0.95);
+}
+
+.preferenceButton:hover {
+    filter: brightness(1.2);
+}
+
+.cardsContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 40px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    text-decoration: none;
+    color: white;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(28, 28, 153, 0.67);
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 2px 1px 12px 2px black;
+    transition: 300ms ease;
+}
+
+.card:active {
+    transform: scale(0.93);
+}
+
+.card:hover {
+    filter: brightness(1.3);
+}

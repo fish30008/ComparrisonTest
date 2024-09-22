@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendation</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/twoFactorQuiz.css">
+    <link rel="stylesheet" href="./style/uploda.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/file.png">
+    <link rel="stylesheet" href="./style/loading.css">
+</head>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="logo">
+        <img src="./assets/img/file.png">
+        <a href="./index.html">
+            roSearch
+        </a>
+    </div>
+    <div class="headerContainer">
+        <a href="./index.html">
+            <div class="headerItem" id="interests">Home</div>
+        </a>
+        <a href="./twoFactorQuiz.html">
+            <div class="headerItem" id="search">Recommendation</div>
+        </a>
+        <a href="./link.html">
+            <div class="headerItem" id="linkSearch">Rate product</div>
+        </a>
+        <a href="./compare.html">
+            <div class="headerItem" id="linkSearch">Compare products</div>
+        </a>
+    </div>
+</div>
+
+<!-- TWO FACTOR QUIZZ -->
+<div class="twoFactorQuizz">
+    <div class="searchTwoFactor">
+        <div class="animContainer">
+            Product Searching is
+            <span class="typed-text"></span>
+            <span class="cursor">&nbsp;</span>
+        </div>
+        <label for="factorsearch">Enter the wanted product:</label>
+        <div>
+            <input type="text" name="factorsearch" id="inputTwoFactor" class="inputTwoFactor"
+                placeholder="E.g: TV, car, processor">
+            <button class="factorButton">Process</button>
+            <button class="factorButton" id="imgSrch">Image search</button>
+        </div>
+    </div>
+
+    <div class="file-uploader">
+        <div class="uploader-header">
+            <h2 class="uploader-title">File Uploader Made</h2>
+            <h4 class="file-completed-status"></h4>
+        </div>
+        <ul class="file-list"></ul>
+        <div class="file-upload-box">
+            <h2 class="box-title">
+                <span class="file-instruction">Drag files here or</span>
+                <span class="file-browse-button">browse</span>
+            </h2>
+            <input class="file-browse-input" type="file" multiple hidden>
+        </div>
+    </div>
+
+    <div class="preferencesContainer">
+        <p>Select Preferences:</p>
+        <div class="preferences" id="preferences">
+            <div class="preference">Cheap
+                <span class="tooltip">text text</span>
+            </div>
+        </div>
+    </div>
+    <div class="preferenceButton">Find Recomendation</div>
+    <div class="cardsContainer">
+    </div>
+    <div class="footer">
+        <hr>
+        <div class="section">
+            <div class="subsection">
+                <h1>Contact Us</h1>
+                <h3>Street: Strada Studenților 9/7</h3>
+                <h3>City: Chisinau</h3>
+                <h3>Zip Code:21201</h3>
+                <h3>Phone number: 0(22)345678</h3>
+            </div>
+            <div class="subsection">
+                <h1>Menu</h1>
+                <h3><a href="./interests.html">Interests</a></h3>
+                <h3><a href="./twoFactorQuiz.html">Two factor quiz</a></h3>
+                <h3><a href="./link.html">Search using link</a></h3>
+            </div>
+            <div class="subsection text-right">
+                <h1>Were are we located ?</h1>
+                <iframe width="250" height="150" id="gmap_canvas"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Strada%20Studen%C8%9Bilor%209/7,%20Chi%C8%99in%C4%83u,%20Republica%20Moldova+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="loading-wrapper">
+    <div id="loading-text">LOADING</div>
+    <div id="loading-content"></div>
+</div>
+<script src="./JavaScript/main.js" defer></script>
+<script src="./JavaScript/preferences.js" defer></script>
+<script src="./JavaScript/upload.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/interests.css">
+    <link rel="stylesheet" href="./style/loading.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/file.png">
+</head>
+
+<body>
+    <div class="container_background">
+
+
+        <!-- HEADER -->
+        <div class="header">
+            <div class="logo">
+                <img src="./assets/img/file.png">
+                <a href="./index.html">
+                    roSearch
+                </a>
+            </div>
+            <div class="headerContainer">
+                <a href="./index.html">
+                    <div class="headerItem" id="interests">Home</div>
+                </a>
+                <a href="./twoFactorQuiz.html">
+                    <div class="headerItem" id="search">Recommendation</div>
+                </a>
+                <a href="./link.html">
+                    <div class="headerItem" id="linkSearch">Rate product</div>
+                </a>
+                <a href="./compare.html">
+                    <div class="headerItem" id="linkSearch">Compare products</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="anim">
+            <p>Find the best option suited for you!</p>
+        </div>
+
+        <div class="interestsPage">
+            <div class="interest_container">
+                <button class="interest_button" id="openModalBtn">Find Your Interests</button>
+            </div>
+        </div>
+
+        <div class="post-container"></div>
+
+        <!-- INTERESTS -->
+        <div id="interestsModal" class="modal">
+            <div class="modal-content">
+                <h2 class="interes-title">Choose your recommendations</h2>
+                <span class="close">&times;</span>
+                <div class="interest-container">
+                    <div class="interest-pairing">
+                        <h3>Technologies</h3>
+                        <div class="interest-group">
+                            <button class="interest-item">TV</button>
+                            <button class="interest-item">Smartphone</button>
+                            <button class="interest-item">Desktop</button>
+                            <button class="interest-item">Laptop</button>
+                            <button class="interest-item">Home Audio</button>
+                        </div>
+                    </div>
+                    <div class="interest-pairing">
+                        <h3>Cars</h3>
+                        <div class="interest-group">
+                            <button class="interest-item">SUV</button>
+                            <button class="interest-item">Sedan</button>
+                            <button class="interest-item">Mercedes</button>
+                            <button class="interest-item">BMW</button>
+                            <button class="interest-item">Sport car</button>
+                            <button class="interest-item">Crossover</button>
+                            <button class="interest-item">Coupe</button>
+                            <button class="interest-item">Cabriolet</button>
+                            <button class="interest-item">Minivan</button>
+                            <button class="interest-item">Luxury</button>
+                        </div>
+                    </div>
+                    <div class="interest-pairing">
+                        <h3>Home</h3>
+                        <div class="interest-group">
+                            <button class="interest-item">Lanterns</button>
+                            <button class="interest-item">Sofa</button>
+                            <button class="interest-item">Furniture</button>
+                            <button class="interest-item">Carpet</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="interes__process-btn" id="processButton">Process</button>
+            </div>
+        </div>
+        <div class="footer">
+            <hr>
+            <div class="section">
+                <div class="subsection">
+                    <h1>Contact Us</h1>
+                    <h3>Street: Strada Studenților 9/7</h3>
+                    <h3>City: Chisinau</h3>
+                    <h3>Zip Code:21201</h3>
+                    <h3>Phone number: 0(22)345678</h3>
+                </div>
+                <div class="subsection">
+                    <h1>Menu</h1>
+                    <h3><a href="./interests.html">Interests</a></h3>
+                    <h3><a href="./twoFactorQuiz.html">Two factor quiz</a></h3>
+                    <h3><a href="./link.html">Search using link</a></h3>
+                </div>
+                <div class="subsection text-right">
+                    <h1>Were are we located ?</h1>
+                    <iframe width="250" height="150" id="gmap_canvas"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Strada%20Studen%C8%9Bilor%209/7,%20Chi%C8%99in%C4%83u,%20Republica%20Moldova+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="loading-wrapper">
+        <div id="loading-text">LOADING</div>
+        <div id="loading-content"></div>
+    </div>
+    <script src="./JavaScript/main.js" defer></script>
+    <script src="./JavaScript/interests.js"></script>
+</body>
+
+</html>

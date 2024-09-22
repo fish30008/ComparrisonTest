@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <script>
+        let IP = "http://192.168.43.133:5000";
+        function printInputs() {
+            // Get the values of the input fields
+            var input1 = document.getElementById('input1').value;
+            var input2 = document.getElementById('input2').value;
+            let msg = [input1, input2]
+            send(JSON.stringify(msg));
+        }
+        async function send(input) {
+            const response = await fetch(IP+'/vs', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ input: input })
+            });
+            const data = await response.json();
+            if (response.ok) {
+                document.getElementById('output').textContent = data.result;
+            } else {
+                console.log(`Error: ${data.error}`)
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Input Form</h1>
+    <form onsubmit="event.preventDefault(); printInputs();">
+        <label for="input1">Input 1:</label>
+        <input type="text" id="input1" name="input1"><br><br>
+        <label for="input2">Input 2:</label>
+        <input type="text" id="input2" name="input2"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <pre id="output"></pre>
+</body>
+</html>
